@@ -22,4 +22,4 @@ Token
     click element       //*[@id="/account/deactivate-account"]
     wait until page contains element    //*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/button
     click element   //*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/button
-    reasons
+    deactpage

@@ -58,9 +58,8 @@ LowerContract
     click element       //*[@id="dc_payout_toggle_item"]
     clearinput          //*[@id="dt_amount_input"]
     input text          //*[@id="dt_amount_input"]        15.50
-    wait until page contains element        //*[@id="dt_purchase_put_button"]
-    click element       //*[@id="dt_purchase_put_button"]
-
+    wait until page contains element    //*[@id="dt_purchase_put_price"]/div[2]     70
+    click element       //*[@id="dt_purchase_put_price"]
 
 LowerBarrier
     wait until page does not contain element    //*[@class="chart-container__loader"]     90
@@ -68,7 +67,7 @@ LowerBarrier
     wait until page contains element        //*[@class="cq-menu-btn"]     90
     click element       //*[@class="cq-symbol-select-btn__container"]
     click element       //*[text()="Forex"]
-    click element       //*[text()="AUD/USD"]
+    click element       //*[@id="trade"]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div[1]/div[3]/div[1]
     wait until page contains element        //*[@id="dt_contract_dropdown"]     60
     click element       //*[@id="dt_contract_dropdown"]
     click element       //*[text()="All"]
@@ -91,8 +90,9 @@ Multiplier
     click element       //*[@id="dc_multipliers_link"]
     click element       //*[@id="dt_contract_multiplier_item"]
 
-    click element       //*[@class="dc-dropdown__container"]
-    page should contain       //*[text()="x20"]
+#    click element       //*[@class="dc-dropdown__container"]
+#    click button        //*[@id="20"]
+#    page should contain     //*[text()="x20"]
 
 
 

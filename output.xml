@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211214 08:58:48.194" rpa="false" schemaversion="2">
-<suite id="s1" name="Deactivate" source="/home/syafiqah/PycharmProjects/demo/deactivate.robot">
-<test id="s1-t1" name="Token">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211214 13:31:55.433" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="/home/syafiqah/PycharmProjects/demo/test.robot">
+<test id="s1-t1" name="Open Deriv">
 <kw name="Login" library="login">
 <arg>${my_email}</arg>
 <arg>${my_pw}</arg>
@@ -9,165 +9,698 @@
 <arg>url=https://app.deriv.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211214 08:58:48.281" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
-<status status="PASS" starttime="20211214 08:58:48.281" endtime="20211214 08:58:57.027"/>
+<msg timestamp="20211214 13:31:55.519" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
+<status status="PASS" starttime="20211214 13:31:55.519" endtime="20211214 13:32:04.505"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1280</arg>
 <arg>1028</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20211214 08:58:57.027" endtime="20211214 08:58:57.154"/>
+<status status="PASS" starttime="20211214 13:32:04.506" endtime="20211214 13:32:04.632"/>
 </kw>
 <kw name="Wait Until Location Does Not Contain" library="SeleniumLibrary">
 <arg>dt_core_header_acc-info-preloader</arg>
 <doc>Waits until the current URL does not contains ``location``.</doc>
-<status status="PASS" starttime="20211214 08:58:57.154" endtime="20211214 08:58:57.159"/>
+<status status="PASS" starttime="20211214 13:32:04.632" endtime="20211214 13:32:04.637"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${login_btn}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:58:57.159" endtime="20211214 08:58:57.170"/>
+<status status="PASS" starttime="20211214 13:32:04.637" endtime="20211214 13:32:04.650"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:58:57.171" level="INFO">Clicking element 'dt_login_button'.</msg>
-<status status="PASS" starttime="20211214 08:58:57.171" endtime="20211214 08:58:59.930"/>
+<msg timestamp="20211214 13:32:04.650" level="INFO">Clicking element 'dt_login_button'.</msg>
+<status status="PASS" starttime="20211214 13:32:04.650" endtime="20211214 13:32:04.693"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${email_field}</arg>
 <arg>15</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:58:59.930" endtime="20211214 08:58:59.941"/>
+<status status="PASS" starttime="20211214 13:32:04.693" endtime="20211214 13:32:07.668"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email_field}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 08:58:59.942" level="INFO">Typing text 'syafiqah@besquare.com.my' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20211214 08:58:59.941" endtime="20211214 08:58:59.994"/>
+<msg timestamp="20211214 13:32:07.668" level="INFO">Typing text 'syafiqah@besquare.com.my' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20211214 13:32:07.668" endtime="20211214 13:32:07.718"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${pw_field}</arg>
 <arg>${pw}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 08:58:59.994" level="INFO">Typing text 'Besquare123' into text field '//*[@type="password"]'.</msg>
-<status status="PASS" starttime="20211214 08:58:59.994" endtime="20211214 08:59:00.044"/>
+<msg timestamp="20211214 13:32:07.719" level="INFO">Typing text 'Besquare123' into text field '//*[@type="password"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:07.719" endtime="20211214 13:32:07.772"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_oauth_bt}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:00.044" level="INFO">Clicking element '//*[text()="Log in"]'.</msg>
-<status status="PASS" starttime="20211214 08:59:00.044" endtime="20211214 08:59:02.055"/>
+<msg timestamp="20211214 13:32:07.773" level="INFO">Clicking element '//*[text()="Log in"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:07.772" endtime="20211214 13:32:11.648"/>
 </kw>
-<status status="PASS" starttime="20211214 08:58:48.280" endtime="20211214 08:59:02.055"/>
+<status status="PASS" starttime="20211214 13:31:55.519" endtime="20211214 13:32:11.648"/>
 </kw>
 <kw name="ChangeAccount" library="login">
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>dt_core_header_acc-info-preloader</arg>
 <arg>90</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:02.055" endtime="20211214 08:59:05.648"/>
+<status status="PASS" starttime="20211214 13:32:11.649" endtime="20211214 13:32:14.315"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="dt_core_account-info_acc-info"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:05.648" level="INFO">Clicking element '//*[@id="dt_core_account-info_acc-info"]'.</msg>
-<status status="PASS" starttime="20211214 08:59:05.648" endtime="20211214 08:59:05.749"/>
+<msg timestamp="20211214 13:32:14.315" level="INFO">Clicking element '//*[@id="dt_core_account-info_acc-info"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:14.315" endtime="20211214 13:32:14.386"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>dt_core_account-switcher_demo-tab</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:05.750" level="INFO">Clicking element 'dt_core_account-switcher_demo-tab'.</msg>
-<status status="PASS" starttime="20211214 08:59:05.749" endtime="20211214 08:59:05.802"/>
+<msg timestamp="20211214 13:32:14.387" level="INFO">Clicking element 'dt_core_account-switcher_demo-tab'.</msg>
+<status status="PASS" starttime="20211214 13:32:14.387" endtime="20211214 13:32:14.456"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="dt_VRTC4795354"]/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:05.802" level="INFO">Clicking element '//*[@id="dt_VRTC4795354"]/span'.</msg>
-<status status="PASS" starttime="20211214 08:59:05.802" endtime="20211214 08:59:05.875"/>
+<msg timestamp="20211214 13:32:14.456" level="INFO">Clicking element '//*[@id="dt_VRTC4795354"]/span'.</msg>
+<status status="PASS" starttime="20211214 13:32:14.456" endtime="20211214 13:32:14.544"/>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20211214 08:59:05.876" endtime="20211214 08:59:05.881"/>
+<status status="PASS" starttime="20211214 13:32:14.544" endtime="20211214 13:32:14.549"/>
 </kw>
-<status status="PASS" starttime="20211214 08:59:02.055" endtime="20211214 08:59:05.881"/>
+<status status="PASS" starttime="20211214 13:32:11.648" endtime="20211214 13:32:14.549"/>
 </kw>
+<kw name="RiseContract" library="login">
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
-<arg>dt_core_header_acc-info-preloader</arg>
+<arg>//*[@class="chart-container__loader"]</arg>
 <arg>90</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:05.882" endtime="20211214 08:59:10.651"/>
+<status status="PASS" starttime="20211214 13:32:14.549" endtime="20211214 13:32:19.677"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="dt_core_header_acc-info-container"]/div[2]/div</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:10.651" level="INFO">Clicking element '//*[@id="dt_core_header_acc-info-container"]/div[2]/div'.</msg>
-<status status="PASS" starttime="20211214 08:59:10.651" endtime="20211214 08:59:10.754"/>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Loading interface..."]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:19.677" endtime="20211214 13:32:19.688"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="/account/deactivate-account"]</arg>
+<arg>//*[@class="cq-menu-btn"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:19.689" endtime="20211214 13:32:19.697"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-symbol-select-btn__container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:19.697" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn__container"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:19.697" endtime="20211214 13:32:19.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Synthetic Indices"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:19.779" level="INFO">Clicking element '//*[text()="Synthetic Indices"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:19.778" endtime="20211214 13:32:20.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Volatility 10 (1s) Index"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:20.089" level="INFO">Clicking element '//*[text()="Volatility 10 (1s) Index"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:20.089" endtime="20211214 13:32:20.173"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_purchase_call_button"]</arg>
+<arg>70</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:20.174" endtime="20211214 13:32:20.746"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_purchase_call_button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:20.746" level="INFO">Clicking element '//*[@id="dt_purchase_call_button"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:20.746" endtime="20211214 13:32:21.790"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:14.549" endtime="20211214 13:32:21.790"/>
+</kw>
+<kw name="LowerContract" library="login">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@class="chart-container__loader"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:21.790" endtime="20211214 13:32:21.800"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Loading interface..."]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:21.800" endtime="20211214 13:32:21.806"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-menu-btn"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:21.806" endtime="20211214 13:32:21.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-symbol-select-btn__container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:21.813" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn__container"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:21.813" endtime="20211214 13:32:21.869"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Forex"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:21.870" level="INFO">Clicking element '//*[text()="Forex"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:21.870" endtime="20211214 13:32:22.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="AUD/USD"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:22.246" level="INFO">Clicking element '//*[text()="AUD/USD"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:22.246" endtime="20211214 13:32:22.338"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:10.754" endtime="20211214 08:59:12.467"/>
+<status status="PASS" starttime="20211214 13:32:22.339" endtime="20211214 13:32:23.197"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="/account/deactivate-account"]</arg>
+<arg>//*[@id="dt_contract_dropdown"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:12.468" level="INFO">Clicking element '//*[@id="/account/deactivate-account"]'.</msg>
-<status status="PASS" starttime="20211214 08:59:12.467" endtime="20211214 08:59:12.546"/>
+<msg timestamp="20211214 13:32:23.198" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:23.197" endtime="20211214 13:32:23.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="All"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:23.261" level="INFO">Clicking element '//*[text()="All"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:23.261" endtime="20211214 13:32:23.456"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Higher/Lower"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:23.457" level="INFO">Clicking element '//*[text()="Higher/Lower"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:23.457" endtime="20211214 13:32:23.596"/>
+</kw>
+<kw name="ClearInput" library="login">
+<arg>//*[@class="dc-input__field"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:23.597" endtime="20211214 13:32:23.768"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 13:32:23.816" level="INFO">${current_value} = 1</msg>
+<status status="PASS" starttime="20211214 13:32:23.768" endtime="20211214 13:32:23.816"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 13:32:23.816" level="INFO">Length is 1</msg>
+<msg timestamp="20211214 13:32:23.816" level="INFO">${value_length} = 1</msg>
+<status status="PASS" starttime="20211214 13:32:23.816" endtime="20211214 13:32:23.816"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:23.816" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:23.817" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@class="dc-input__field"] element.</msg>
+<msg timestamp="20211214 13:32:24.144" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:24.145" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:23.816" endtime="20211214 13:32:24.201"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:23.816" endtime="20211214 13:32:24.201"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:24.201" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:24.202" level="INFO">Sending key(s) ('DELETE',) to //*[@class="dc-input__field"] element.</msg>
+<msg timestamp="20211214 13:32:24.545" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 13:32:24.545" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 13:32:24.201" endtime="20211214 13:32:24.568"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:24.201" endtime="20211214 13:32:24.568"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:23.596" endtime="20211214 13:32:24.568"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field"]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:24.568" level="INFO">Typing text '2' into text field '//*[@class="dc-input__field"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:24.568" endtime="20211214 13:32:24.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dc_payout_toggle_item"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:24.727" level="INFO">Clicking element '//*[@id="dc_payout_toggle_item"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:24.726" endtime="20211214 13:32:24.824"/>
+</kw>
+<kw name="ClearInput" library="login">
+<arg>//*[@id="dt_amount_input"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:24.824" endtime="20211214 13:32:24.837"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 13:32:24.856" level="INFO">${current_value} = 10</msg>
+<status status="PASS" starttime="20211214 13:32:24.837" endtime="20211214 13:32:24.856"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 13:32:24.856" level="INFO">Length is 2</msg>
+<msg timestamp="20211214 13:32:24.856" level="INFO">${value_length} = 2</msg>
+<status status="PASS" starttime="20211214 13:32:24.856" endtime="20211214 13:32:24.856"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:24.857" level="INFO">Repeating keyword, round 1/2.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:24.857" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 13:32:25.143" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:25.144" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:24.857" endtime="20211214 13:32:25.168"/>
+</kw>
+<msg timestamp="20211214 13:32:25.168" level="INFO">Repeating keyword, round 2/2.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:25.169" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 13:32:25.437" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:25.437" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:25.168" endtime="20211214 13:32:25.472"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:24.857" endtime="20211214 13:32:25.472"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:25.473" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:25.473" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 13:32:25.762" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 13:32:25.762" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 13:32:25.473" endtime="20211214 13:32:25.767"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:25.472" endtime="20211214 13:32:25.767"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:24.824" endtime="20211214 13:32:25.767"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="dt_amount_input"]</arg>
+<arg>15.50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:25.767" level="INFO">Typing text '15.50' into text field '//*[@id="dt_amount_input"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:25.767" endtime="20211214 13:32:25.851"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/button</arg>
+<arg>//*[@id="dt_purchase_put_price"]/div[2]</arg>
+<arg>70</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:12.546" endtime="20211214 08:59:12.558"/>
+<status status="PASS" starttime="20211214 13:32:25.851" endtime="20211214 13:32:28.417"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/button</arg>
+<arg>//*[@id="dt_purchase_put_price"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:12.558" level="INFO">Clicking element '//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20211214 08:59:12.558" endtime="20211214 08:59:12.601"/>
+<msg timestamp="20211214 13:32:28.417" level="INFO">Clicking element '//*[@id="dt_purchase_put_price"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:28.417" endtime="20211214 13:32:28.498"/>
 </kw>
-<kw name="Reasons" library="deactivatecases">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[1]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:12.602" endtime="20211214 08:59:12.613"/>
+<status status="PASS" starttime="20211214 13:32:21.790" endtime="20211214 13:32:28.498"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:12.613" level="INFO">Clicking element '//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[1]'.</msg>
-<status status="PASS" starttime="20211214 08:59:12.613" endtime="20211214 08:59:12.652"/>
+<kw name="LowerBarrier" library="login">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@class="chart-container__loader"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:28.499" endtime="20211214 13:32:28.516"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[2]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:12.652" endtime="20211214 08:59:12.663"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:12.663" level="INFO">Clicking element '//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[2]'.</msg>
-<status status="PASS" starttime="20211214 08:59:12.663" endtime="20211214 08:59:12.701"/>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Loading interface..."]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:28.516" endtime="20211214 13:32:28.533"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[3]</arg>
+<arg>//*[@class="cq-menu-btn"]</arg>
+<arg>90</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 08:59:12.702" endtime="20211214 08:59:12.710"/>
+<status status="PASS" starttime="20211214 13:32:28.533" endtime="20211214 13:32:28.573"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[3]</arg>
+<arg>//*[@class="cq-symbol-select-btn__container"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 08:59:12.710" level="INFO">Clicking element '//*[@id="app_contents"]/div/div/div/div/div[2]/div/div[2]/div/div/div/form/label[3]'.</msg>
-<status status="PASS" starttime="20211214 08:59:12.710" endtime="20211214 08:59:12.742"/>
+<msg timestamp="20211214 13:32:28.573" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn__container"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:28.573" endtime="20211214 13:32:28.655"/>
 </kw>
-<status status="PASS" starttime="20211214 08:59:12.602" endtime="20211214 08:59:12.743"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Forex"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:28.656" level="INFO">Clicking element '//*[text()="Forex"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:28.655" endtime="20211214 13:32:28.983"/>
 </kw>
-<status status="PASS" starttime="20211214 08:58:48.280" endtime="20211214 08:59:12.743"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="trade"]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div[1]/div[3]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:28.983" level="INFO">Clicking element '//*[@id="trade"]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div/div[2]/div[2]/div/div[3]/div[1]/div[3]/div[1]'.</msg>
+<status status="PASS" starttime="20211214 13:32:28.983" endtime="20211214 13:32:29.048"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:29.049" endtime="20211214 13:32:29.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:29.075" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:29.074" endtime="20211214 13:32:29.123"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="All"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:29.124" level="INFO">Clicking element '//*[text()="All"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:29.124" endtime="20211214 13:32:29.363"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Higher/Lower"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:29.364" level="INFO">Clicking element '//*[text()="Higher/Lower"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:29.363" endtime="20211214 13:32:29.408"/>
+</kw>
+<kw name="ClearInput" library="login">
+<arg>//*[@class="dc-input__field"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:29.408" endtime="20211214 13:32:29.415"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 13:32:29.430" level="INFO">${current_value} = 2</msg>
+<status status="PASS" starttime="20211214 13:32:29.415" endtime="20211214 13:32:29.430"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 13:32:29.431" level="INFO">Length is 1</msg>
+<msg timestamp="20211214 13:32:29.431" level="INFO">${value_length} = 1</msg>
+<status status="PASS" starttime="20211214 13:32:29.430" endtime="20211214 13:32:29.431"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:29.431" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:29.431" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@class="dc-input__field"] element.</msg>
+<msg timestamp="20211214 13:32:29.735" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:29.735" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:29.431" endtime="20211214 13:32:29.776"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:29.431" endtime="20211214 13:32:29.776"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:29.777" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:29.777" level="INFO">Sending key(s) ('DELETE',) to //*[@class="dc-input__field"] element.</msg>
+<msg timestamp="20211214 13:32:30.076" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 13:32:30.076" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 13:32:29.777" endtime="20211214 13:32:30.081"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:29.777" endtime="20211214 13:32:30.081"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:29.408" endtime="20211214 13:32:30.082"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@class="dc-input__field"]</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:30.082" level="INFO">Typing text '2' into text field '//*[@class="dc-input__field"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:30.082" endtime="20211214 13:32:30.155"/>
+</kw>
+<kw name="ClearInput" library="login">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:30.155" endtime="20211214 13:32:30.165"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 13:32:30.176" level="INFO">${current_value} = 0.71565</msg>
+<status status="PASS" starttime="20211214 13:32:30.165" endtime="20211214 13:32:30.176"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 13:32:30.176" level="INFO">Length is 7</msg>
+<msg timestamp="20211214 13:32:30.176" level="INFO">${value_length} = 7</msg>
+<status status="PASS" starttime="20211214 13:32:30.176" endtime="20211214 13:32:30.176"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:30.176" level="INFO">Repeating keyword, round 1/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:30.177" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:30.512" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:30.512" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:30.176" endtime="20211214 13:32:30.528"/>
+</kw>
+<msg timestamp="20211214 13:32:30.528" level="INFO">Repeating keyword, round 2/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:30.528" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:30.810" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:30.811" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:30.528" endtime="20211214 13:32:30.834"/>
+</kw>
+<msg timestamp="20211214 13:32:30.834" level="INFO">Repeating keyword, round 3/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:30.835" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:31.100" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:31.100" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:30.834" endtime="20211214 13:32:31.122"/>
+</kw>
+<msg timestamp="20211214 13:32:31.122" level="INFO">Repeating keyword, round 4/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:31.124" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:31.392" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:31.392" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:31.123" endtime="20211214 13:32:31.410"/>
+</kw>
+<msg timestamp="20211214 13:32:31.410" level="INFO">Repeating keyword, round 5/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:31.411" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:31.781" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:31.781" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:31.410" endtime="20211214 13:32:31.819"/>
+</kw>
+<msg timestamp="20211214 13:32:31.819" level="INFO">Repeating keyword, round 6/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:31.820" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:32.113" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:32.113" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:31.819" endtime="20211214 13:32:32.128"/>
+</kw>
+<msg timestamp="20211214 13:32:32.128" level="INFO">Repeating keyword, round 7/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:32.129" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:32.409" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 13:32:32.409" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 13:32:32.128" endtime="20211214 13:32:32.436"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:30.176" endtime="20211214 13:32:32.436"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 13:32:32.436" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 13:32:32.437" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 13:32:32.713" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 13:32:32.713" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 13:32:32.436" endtime="20211214 13:32:32.724"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:32.436" endtime="20211214 13:32:32.724"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:30.155" endtime="20211214 13:32:32.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="dt_barrier_1_input"]</arg>
+<arg>+1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:32.724" level="INFO">Typing text '+1' into text field '//*[@id="dt_barrier_1_input"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:32.724" endtime="20211214 13:32:32.821"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:28.498" endtime="20211214 13:32:32.821"/>
+</kw>
+<kw name="Multiplier" library="login">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[@class="chart-container__loader"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:32.822" endtime="20211214 13:32:32.829"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>//*[text()="Loading interface..."]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:32.830" endtime="20211214 13:32:32.835"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-menu-btn"]</arg>
+<arg>90</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:32.836" endtime="20211214 13:32:32.844"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="cq-symbol-select-btn__container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:32.845" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn__container"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:32.844" endtime="20211214 13:32:32.896"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Synthetic Indices"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:32.897" level="INFO">Clicking element '//*[text()="Synthetic Indices"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:32.897" endtime="20211214 13:32:33.231"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()="Volatility 50 Index"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:33.231" level="INFO">Clicking element '//*[text()="Volatility 50 Index"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:33.231" endtime="20211214 13:32:33.312"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 13:32:33.312" endtime="20211214 13:32:34.026"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_dropdown"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:34.026" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:34.026" endtime="20211214 13:32:34.071"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dc_multipliers_link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:34.072" level="INFO">Clicking element '//*[@id="dc_multipliers_link"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:34.071" endtime="20211214 13:32:34.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_multiplier_item"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 13:32:34.246" level="INFO">Clicking element '//*[@id="dt_contract_multiplier_item"]'.</msg>
+<status status="PASS" starttime="20211214 13:32:34.245" endtime="20211214 13:32:34.405"/>
+</kw>
+<status status="PASS" starttime="20211214 13:32:32.822" endtime="20211214 13:32:34.405"/>
+</kw>
+<status status="PASS" starttime="20211214 13:31:55.518" endtime="20211214 13:32:34.405"/>
 </test>
-<status status="PASS" starttime="20211214 08:58:48.195" endtime="20211214 08:59:12.743"/>
+<status status="PASS" starttime="20211214 13:31:55.434" endtime="20211214 13:32:34.405"/>
 </suite>
 <statistics>
 <total>
@@ -176,7 +709,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Deactivate">Deactivate</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
