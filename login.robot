@@ -15,6 +15,7 @@ Login
     input text  ${pw_field}   ${pw}
     click element  ${login_oauth_bt}
 
+ChangeAccount
     wait until page does not contain element     dt_core_header_acc-info-preloader   90
     click element  //*[@id="dt_core_account-info_acc-info"]
     click element   dt_core_account-switcher_demo-tab

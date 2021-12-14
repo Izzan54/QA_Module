@@ -21,6 +21,7 @@ ${day_duration}     //*[@id="d"]
 *** Test Cases ***
 Open Deriv
     Login    ${my_email}     ${my_pw}
+    ChangeAccount
     RiseContract
     LowerContract
     LowerBarrier
